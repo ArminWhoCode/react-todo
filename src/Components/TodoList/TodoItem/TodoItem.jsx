@@ -7,7 +7,7 @@ const Todo = (props) => {
       <button className="compelete">
         <i className="fa fa-check"></i>
       </button>
-      <button className="delete">
+      <button className="delete" onClick={props.deleteHandler}>
         <i className="fa fa-trash"></i>
       </button>
     </div>
