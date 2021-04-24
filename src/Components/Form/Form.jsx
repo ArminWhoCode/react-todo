@@ -10,7 +10,7 @@ const Form = (props) => {
     if (props.inputText) {
       props.setTodos([
         ...props.todos,
-        { text: props.inputText, compeleted: false },
+        { text: props.inputText, completed: false },
       ]);
       props.setInputText("");
     }

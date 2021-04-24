@@ -8,6 +8,21 @@
     margin: 1rem;
     display: flex;
     li {
+      &.complete {
+        background-color: #ccc;
+        &::after {
+          content: '';
+          display: block;
+          width: 120px;
+          height: 2px;
+          background-color: #000;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+      position: relative;
       list-style: none;
       background-color: #fff;
       padding: 1rem;
@@ -18,7 +33,10 @@
       i {
         color: #fff;
       }
-      &.compelete {
+      &.complete {
+        &.disabled {
+          cursor: not-allowed;
+        }
         background-color: #68edcb;
       }
       cursor: pointer;

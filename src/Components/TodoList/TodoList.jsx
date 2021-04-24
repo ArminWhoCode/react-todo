@@ -8,6 +8,13 @@ const TodoList = (props) => {
     todos.splice(id, 1);
     props.setTodos(todos);
   };
+  const completeHandler = (id) => {
+    const todos = [...props.todos];
+    const todo = todos[id];
+
+    todo.completed = !todo.completed;
+    props.setTodos(todos);
+  };
   return (
     <div className="Todo__list">
       <ul>
@@ -16,6 +23,8 @@ const TodoList = (props) => {
             key={index}
             text={todo.text}
             deleteHandler={() => deleteHandler(index)}
+            completeHandler={() => completeHandler(index)}
+            complete={todo.completed}
           />
         ))}
       </ul>
