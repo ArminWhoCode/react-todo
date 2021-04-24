@@ -1,0 +1,30 @@
+.Todo {
+  &__list {
+    margin-top: 4rem;
+    display: flex;
+  }
+  &__item {
+    overflow: hidden;
+    margin: 1rem;
+    display: flex;
+    li {
+      list-style: none;
+      background-color: #fff;
+      padding: 1rem;
+      width: 220px;
+      text-align: center;
+    }
+    button {
+      i {
+        color: #fff;
+      }
+      &.compelete {
+        background-color: #68edcb;
+      }
+      border: none;
+      outline: none;
+      padding: 0.5rem 1rem;
+      background-color: #ff7b94;
+    }
+  }
+}
