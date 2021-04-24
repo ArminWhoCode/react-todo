@@ -1,4 +1,5 @@
 import React from "react";
+import "./TodoList.scss";
 import Todo from "./TodoItem/TodoItem";
 
 const TodoList = (props) => {
