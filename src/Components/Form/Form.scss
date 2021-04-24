@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #fff;
+  button,
+  input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+  }
+  button {
+    cursor: pointer;
+    &:hover {
+      background-color: #68edcb;
+      i {
+        transform: rotate(360deg);
+        color: #ffffff;
+        transition: transform 0.5s linear 0.2s;
+      }
+      transition: all 0.3s ease-in;
+    }
+  }
+}
